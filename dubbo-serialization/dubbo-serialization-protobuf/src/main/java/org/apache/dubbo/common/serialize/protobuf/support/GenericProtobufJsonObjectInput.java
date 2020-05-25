@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.serialize.ObjectInput;
@@ -40,9 +41,11 @@ import java.util.Map;
 import static org.apache.dubbo.common.constants.CommonConstants.HEARTBEAT_EVENT;
 import static org.apache.dubbo.common.constants.CommonConstants.MOCK_HEARTBEAT_EVENT;
 
+*/
 /**
  * GenericGoogleProtobuf object input implementation
- */
+ *//*
+
 public class GenericProtobufJsonObjectInput implements ObjectInput {
     private final BufferedReader reader;
 
@@ -135,13 +138,15 @@ public class GenericProtobufJsonObjectInput implements ObjectInput {
         return ProtobufUtils.convertToException(throwableProto);
     }
 
-    /**
+    */
+/**
      * FIXME, only supports transmission of String values.
      *
      * @return
      * @throws IOException
      * @throws ClassNotFoundException
-     */
+     *//*
+
     @Override
     public Map<String, Object> readAttachments() throws IOException, ClassNotFoundException {
         String json = readLine();
@@ -162,3 +167,4 @@ public class GenericProtobufJsonObjectInput implements ObjectInput {
         return eventData;
     }
 }
+*/

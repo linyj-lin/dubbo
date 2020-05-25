@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.serialize.ObjectOutput;
@@ -37,9 +38,11 @@ import java.util.Map;
 import static org.apache.dubbo.common.constants.CommonConstants.HEARTBEAT_EVENT;
 import static org.apache.dubbo.common.constants.CommonConstants.MOCK_HEARTBEAT_EVENT;
 
+*/
 /**
  * GenericGoogleProtobuf object output implementation
- */
+ *//*
+
 public class GenericProtobufObjectOutput implements ObjectOutput {
 
     private final OutputStream os;
@@ -102,10 +105,12 @@ public class GenericProtobufObjectOutput implements ObjectOutput {
     @SuppressWarnings("unchecked")
     @Override
     public void writeObject(Object obj) throws IOException {
-        /**
+        */
+/**
          * Protobuf does not allow writing of non-protobuf generated messages, including null value.
          * Writing of null value from developers should be denied immediately by throwing exception.
-         */
+         *//*
+
         if (obj == null) {
             throw new IllegalStateException("This serialization only supports google protobuf objects, " +
                     "please use com.google.protobuf.Empty instead if you want to transmit null values.");
@@ -154,4 +159,4 @@ public class GenericProtobufObjectOutput implements ObjectOutput {
         os.flush();
     }
 
-}
+}*/

@@ -47,7 +47,12 @@ import static org.apache.dubbo.registry.Constants.REGISTRY_RETRY_PERIOD_KEY;
  */
 public abstract class FailbackRegistry extends AbstractRegistry {
 
-    /*  retry task map */
+    /*  retry task map
+        失败重试机制
+            将各种失败的URL放到不同的Map中
+
+
+    * */
 
     private final ConcurrentMap<URL, FailedRegisteredTask> failedRegistered = new ConcurrentHashMap<URL, FailedRegisteredTask>();
 
@@ -73,6 +78,11 @@ public abstract class FailbackRegistry extends AbstractRegistry {
 
         // since the retry task will not be very much. 128 ticks is enough.
         retryTimer = new HashedWheelTimer(new NamedThreadFactory("DubboRegistryRetryTimer", true), retryPeriod, TimeUnit.MILLISECONDS, 128);
+    }
+
+    @Override
+    public Set<URL> getRegistered() {
+        return super.getRegistered();
     }
 
     public void removeFailedRegisteredTask(URL url) {

@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.serialize.protobuf.support.wrapper.ThrowablePB;
@@ -21,9 +22,11 @@ import org.apache.dubbo.common.serialize.protobuf.support.wrapper.ThrowablePB.Th
 
 import com.google.common.base.Strings;
 
+*/
 /**
  * For protobuf, all server side exceptions should be wrapped using this specific one.
- */
+ *//*
+
 public class ProtobufWrappedException extends RuntimeException {
 
     private static final long serialVersionUID = -1792808536714102039L;
@@ -66,3 +69,4 @@ public class ProtobufWrappedException extends RuntimeException {
 
 }
 
+*/

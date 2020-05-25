@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.serialize.ObjectOutput;
@@ -38,9 +39,11 @@ import java.util.Map;
 import static org.apache.dubbo.common.constants.CommonConstants.HEARTBEAT_EVENT;
 import static org.apache.dubbo.common.constants.CommonConstants.MOCK_HEARTBEAT_EVENT;
 
+*/
 /**
  * GenericGoogleProtobuf object output implementation
- */
+ *//*
+
 public class GenericProtobufJsonObjectOutput implements ObjectOutput {
 
     private final PrintWriter writer;
@@ -133,12 +136,14 @@ public class GenericProtobufJsonObjectOutput implements ObjectOutput {
         writeUTF((String) data);
     }
 
-    /**
+    */
+/**
      * FIXME, only supports transmission of String values.
      *
      * @param attachments
      * @throws IOException
-     */
+     *//*
+
     @Override
     public void writeAttachments(Map<String, Object> attachments) throws IOException {
         if (attachments == null) {
@@ -158,4 +163,4 @@ public class GenericProtobufJsonObjectOutput implements ObjectOutput {
         writer.flush();
     }
 
-}
+}*/

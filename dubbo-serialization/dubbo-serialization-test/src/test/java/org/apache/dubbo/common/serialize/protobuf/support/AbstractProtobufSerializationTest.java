@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.URL;
@@ -338,11 +339,13 @@ public class AbstractProtobufSerializationTest {
         assertEquals(request, derializedRequest);
     }
 
-    /**
+    */
+/**
      * Special test case
      * Dubbo protocol will directly writes native map (Invocation.attachments) using protobuf.
      * this should definitely be fixed but not done yet.
-     */
+     *//*
+
     @Test
     public void testPbMap() throws Exception {
         Map<String, Object> attachments = new HashMap<>();
@@ -370,3 +373,4 @@ public class AbstractProtobufSerializationTest {
     }
 
 }
+*/

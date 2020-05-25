@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.serialize.protobuf.support.wrapper.MapValue;
@@ -59,7 +60,9 @@ public class ProtobufUtils {
         return false;
     }
 
-    /* Protobuf json */
+    */
+/* Protobuf json *//*
+
 
     static <T> T deserializeJson(String json, Class<T> requestClass) throws InvalidProtocolBufferException {
         Builder builder;
@@ -83,7 +86,9 @@ public class ProtobufUtils {
     }
 
 
-    /* Protobuf */
+    */
+/* Protobuf *//*
+
 
     private static ConcurrentMap<Class<? extends MessageLite>, MessageMarshaller> marshallers =
             new ConcurrentHashMap<>();
@@ -203,4 +208,4 @@ public class ProtobufUtils {
             }
         }
     }
-}
+}*/

@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.URL;
@@ -25,6 +26,7 @@ import org.apache.dubbo.common.serialize.Serialization;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+*/
 /**
  * <p>
  * Currently, the Dubbo protocol / framework data, such as attachments, event data, etc.,
@@ -38,7 +40,8 @@ import java.io.OutputStream;
  * </ul>
  *
  * </p>
- */
+ *//*
+
 public class GenericProtobufSerialization implements Serialization {
 
     @Override
@@ -61,3 +64,4 @@ public class GenericProtobufSerialization implements Serialization {
         return new GenericProtobufObjectInput(input);
     }
 }
+*/

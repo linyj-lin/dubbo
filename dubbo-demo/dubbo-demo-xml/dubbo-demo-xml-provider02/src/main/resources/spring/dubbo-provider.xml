@@ -31,6 +31,6 @@
     <bean id="demoService" class="org.apache.dubbo.demo.provider.DemoServiceImpl"  />
 
     <dubbo:service interface="org.apache.dubbo.demo.DemoService" ref="demoService" />
-    <dubbo:protocol name="dubbo" port="20881" threads="200"
+    <dubbo:protocol name="dubbo" port="20880" threads="200"
                     serialization="hessian2" />
 </beans>

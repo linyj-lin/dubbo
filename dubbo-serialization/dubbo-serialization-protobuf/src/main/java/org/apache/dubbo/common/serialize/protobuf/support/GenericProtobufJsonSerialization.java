@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.URL;
@@ -26,10 +27,12 @@ import java.io.OutputStream;
 
 import static org.apache.dubbo.common.serialize.Constants.PROTOBUF_JSON_SERIALIZATION_ID;
 
+*/
 /**
  * This serizalization is use for google protobuf generic reference.
  * The entity be transported between client and server by json string.
- */
+ *//*
+
 public class GenericProtobufJsonSerialization implements Serialization {
 
     @Override
@@ -52,3 +55,4 @@ public class GenericProtobufJsonSerialization implements Serialization {
         return new GenericProtobufJsonObjectInput(input);
     }
 }
+*/

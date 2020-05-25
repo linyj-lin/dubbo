@@ -13,7 +13,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *//*
+
 package org.apache.dubbo.common.serialize.protobuf.support;
 
 import org.apache.dubbo.common.serialize.ObjectInput;
@@ -89,11 +90,13 @@ public class GenericProtobufObjectInput implements ObjectInput {
         return read(BytesValue.class).getValue().toByteArray();
     }
 
-    /**
+    */
+/**
      * Avoid using readObject, always try to pass the target class type for the data you want to read.
      *
      * @return
-     */
+     *//*
+
     @Override
     public Object readObject() {
         throw new UnsupportedOperationException("Provide the protobuf message type you want to read.");
@@ -144,3 +147,4 @@ public class GenericProtobufObjectInput implements ObjectInput {
         return attachments;
     }
 }
+*/

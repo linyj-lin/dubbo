@@ -13,13 +13,16 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *//*
+ */
+package org.apache.dubbo.demo.provider;
 
-package org.apache.dubbo.common.serialize.protobuf.support;
 
-public class GenericProtobufSerializationTest extends AbstractProtobufSerializationTest {
-    {
-        serialization = new GenericProtobufSerialization();
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class XmlProviderApplication02  {
+    public static void main(String[] args) throws Exception {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring/dubbo-provider.xml");
+        context.start();
+        System.in.read();
     }
 }
-*/
